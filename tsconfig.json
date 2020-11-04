@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
     "jsx": "react-native",
     "lib": ["dom", "esnext"],
@@ -7,6 +8,16 @@
     "noEmit": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "strict": true
-  }
+    "strict": true,
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@src/*": ["./src/*"],
+      "@helpers/*": ["./src/helpers/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@assets/*": ["./assets/*"],
+      "@images/*": ["./src/images/*"]
+    }
+  },
+  "exclude": ["node_modules"]
 }
